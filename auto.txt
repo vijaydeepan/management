@@ -1,0 +1,71 @@
+<?php 
+require_once 'php_action/db_connect.php'; 
+require_once 'includes/header.php'; 
+
+if($_GET['o'] == 'add') { 
+// add order
+	echo "<div class='div-request div-hide'>add</div>";
+} else if($_GET['o'] == 'manord') { 
+	echo "<div class='div-request div-hide'>manord</div>";
+} else if($_GET['o'] == 'editOrd') { 
+	echo "<div class='div-request div-hide'>editOrd</div>";
+} // /else manage order
+
+
+?>
+
+					<link rel = "stylesheet" type = "text/css" href = "css/chosen.css" />
+
+				<select class="chosen-select" name="deepan" id="deepan<?php echo $x; ?>" onchange="getProduct(<?php echo $x; ?>)" >
+			  						<option value="">~~SELECT~~</option>
+			  								<?php
+			  							$productSql = "SELECT * FROM supliers ";
+			  							$productData = $connect->query($productSql);
+
+			  							while($row = $productData->fetch_array()) {									 		
+			  									echo "<option value='".$row['suplier_id']."' id='changeProduct".$row['suplier_name']."'>".$row['suplier_name']."</option>";
+										 	} // /while 
+
+			  						?>
+		  						</select>
+							
+	
+	
+					
+							
+							
+							
+							
+							
+							
+							
+							
+	
+<script src = "js/jquery-3.1.1.js"></script>
+<script src = "js/chosen.jquery.js"></script>
+<script type = "text/javascript">
+	$('.chosen-select').chosen({width: "70%"});
+</script>
+<script type = "text/javascript">
+	$(document).ready(function(){
+		$('#group').on('change', function(){
+				if($('#group').val() == ""){
+					$('#animal').empty();				
+					$('#zoo').empty();
+
+					$('<option value = "">Select an animal</option>').appendTo('#animal');
+				    $('<option value = "">Select an zoo</option>').appendTo('#zoo');
+
+					$('#animal').attr('disabled', 'disabled');
+										$('#zoo').attr('disabled', 'disabled');
+
+				}else{
+					$('#animal').removeAttr('disabled', 'disabled');
+					$('#animal').load('animal_get.php?animal_group=' + $('#group').val());
+					$('#zoo').removeAttr('disabled', 'disabled');
+					$('#zoo').load('zoo_get.php?animal_group=' + $('#group').val());
+					
+				}
+		});
+	});
+</script>

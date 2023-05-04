@@ -1,0 +1,121 @@
+.navbar-default {
+    background-color: #21245b;
+    border-color: #d00000;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+{
+	    color: #ffffff;
+    background-color: #d00000;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
+{
+	    color: #ff0000;
+    background-color: transparent;
+	
+	
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover
+{
+	
+	    color: #fff;
+    background-color: #d00000;
+}
+
+.panel-info>.panel-heading {
+    color: #ffffff;
+    background-color: #004265;
+    border-color: #b80000;
+}
+
+
+.panel-heading1 {
+    color: #ffffff;
+    background-color: #c8ecff;
+}
+
+.panel-heading1 {
+    padding: 10px 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.panel-info {
+    border-color: #004265;
+}
+
+
+
+
+.navbar-default .navbar-nav>li>a {
+	
+	    color: #fff;
+	
+}
+
+nav.navbar:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button.button1:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+div.card {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+
+div.cardHeader {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+
+div.cardContainer {
+    padding: 10px;
+}
+
+
+.div-hide {
+	display: none;
+}
+
+.kv-file-zoom {
+	display: none;
+}
+
+div.kv-avatar div.file-input div.file-preview {
+	width: 200px;
+}
+
+/*login form*/
+.vertical {
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+
+.form-control {
+    display: block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+
